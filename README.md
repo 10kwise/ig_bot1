@@ -8,3 +8,4 @@ the bot will use depth first algorithm to get the accounts following the student
 the bot will be nerfed to tru and pass undetected to prevent the account from being banned
 
 the bot is still very early in development but shouldnt take long to complete
+
