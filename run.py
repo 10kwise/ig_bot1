@@ -2,8 +2,7 @@ from ig_main import ig_bot
 
 #give the path to the crome driver path
 path = 'c:\\Users\Administrator\Desktop\chromedriver-win64\chromedriver-win64\chromedriver.exe'
-university_accounts =  [
-    "mitpics", "ucberkeleyofficial", 
+university_accounts =  [ 
     "ucla", "utaustintx", "columbia", "nyuniversity",
     "uflorida", "uscedu", "yale", "princeton_university",
     "cambridgeuniversity", "uwmadison", "uncchapelhill", "georgetownuniversity",
@@ -24,8 +23,6 @@ with open(path_txt) as login_dets:
     password = login_dets.readline()
 
 bot = ig_bot(path=path,names=university_accounts,username=username,password=password)
-try:
-    bot.log_in()
-    bot.search(1)
-except:
-    print("error")
+
+bot.log_in()
+bot.search(1)
